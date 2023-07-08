@@ -1,5 +1,7 @@
 # About
-A Multi-Processing Tool for collecting and extracting information to an Excel file from a Burp Suite file (After Generating Enough Traffic).
+The Burp Collector is a multi-processing tool that is specifically designed to aid Pentesters and Bug Hunters in Web/Mobile Application testing. With its powerful capabilities, it streamlines the process of collecting and extracting information from Burp Suite files, empowering you to effectively manage API endpoints.
+
+Burp Collector efficiently organizes API endpoints and seamlessly exports them to Excel sheets, ensuring a structured and easily accessible overview of your project. By simplifying the management of endpoints, it saves valuable time and allows you to focus on critical testing tasks.
 #### Developed by: Sagiv
 
 # Features
