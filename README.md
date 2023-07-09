@@ -5,8 +5,7 @@ Burp Collector is a multi-processing tool that is specifically designed to aid P
 
 Burp Collector efficiently organizes API endpoints and seamlessly exports them to Excel sheets, ensuring a structured and easily accessible overview of your project. By simplifying the management of endpoints, it saves valuable time and allows you to focus on critical testing tasks.
 #### Developed by: Sagiv
-![2023-07-08_20h28_14](https://github.com/sAjibuu/Burp_Collector/assets/81802295/b154f612-f4434120-a3ac-596a9e84aaa5)
-
+![2023-07-08_20h28_14](https://github.com/sAjibuu/Burp_Collector/assets/81802295/a1839b35-e73b-4917-a762-7a3322e49a34)
 # Features
 1. Collect and extract all API Endpoints you interacted with during the test (SOAP, REST, and GraphQL) to an Excel file - **Highly recommended**.
 2.  Collect and extract all API Endpoints with their body and parameters to a Postman collection - **Highly recommended**.
