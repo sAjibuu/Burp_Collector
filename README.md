@@ -5,19 +5,19 @@ Burp Collector is a multi-processing tool that is specifically designed to aid P
 
 Burp Collector efficiently organizes API endpoints and seamlessly exports them to Excel sheets, ensuring a structured and easily accessible overview of your project. By simplifying the management of endpoints, it saves valuable time and allows you to focus on critical testing tasks.
 #### Developed by: Sagiv
-![2023-07-08_20h28_14](https://github.com/sAjibuu/Burp_Collector/assets/81802295/b154f612-f443-4120-a3ac-596a9e84aaa5)
+![2023-07-08_20h28_14](https://github.com/sAjibuu/Burp_Collector/assets/81802295/b154f612-f4434120-a3ac-596a9e84aaa5)
 
 # Features
-1. Collect and extract all API Endpoints you interacted with during the test (SOAP, REST, and GraphQL) to an Excel file - Highly recommended.
-2. Collect and extract all API Endpoints with their body and parameters to a Postman collection - Highly recommended.
-3. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
-4. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
-5. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
-6. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
-7. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
-8. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
-9. Convert Postman collections to an Excel file - Recommended!
-10. Create a tailored wordlist for your target (Based on Requests/Responses/Cookies/Headers etc') - Recommended!
+1. Collect and extract all API Endpoints you interacted with during the test (SOAP, REST, and GraphQL) to an Excel file - **Highly recommended**.
+2.  Collect and extract all API Endpoints with their body and parameters to a Postman collection - **Highly recommended**.
+3. Create a tailored wordlist for your target (Based on Requests/Responses/Cookies/Headers etc') - **Recommended!**
+4. Convert Postman collections to an Excel file - **Recommended!**
+5. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
+6. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
+7. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
+8. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
+9. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
+10. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
 
 # Installation: 
 
