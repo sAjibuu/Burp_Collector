@@ -8,15 +8,16 @@ Burp Collector efficiently organizes API endpoints and seamlessly exports them t
 ![2023-07-08_20h28_14](https://github.com/sAjibuu/Burp_Collector/assets/81802295/a1839b35-e73b-4917-a762-7a3322e49a34)
 # Features
 1. Collect and extract all API Endpoints you interacted with during the test (SOAP, REST, and GraphQL) to an Excel file - **Highly recommended**.
-2.  Collect and extract all API Endpoints with their body and parameters to a Postman collection - **Highly recommended**.
+2. Collect and extract all API Endpoints with their body and parameters to a Postman collection - **Highly recommended**.
 3. Create a tailored wordlist for your target (Based on Requests/Responses/Cookies/Headers etc') - **Recommended!**
 4. Convert Postman collections to an Excel file - **Recommended!**
-5. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
-6. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
-7. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
-8. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
-9. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
-10. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
+5. Convert collected map files to their original Javascript source code - **Recommended!**
+6. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
+7. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
+8. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
+9. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
+10. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
+11. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
 
 # Installation: 
 
@@ -59,7 +60,11 @@ Options:
    -w, --wordlist  
   
       Create a tailored wordlist for your target (Based on Requests/Responses/Cookies/Headers etc') - Recommended!
-   
+
+   -m, --map 
+  
+      Convert collected map files to their original Javascript source code.
+      
    -J, --js 
   
       Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
