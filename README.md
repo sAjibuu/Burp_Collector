@@ -1,4 +1,4 @@
-# Burp Collector v1.0.0
+# Burp Collector
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Burp Collector is a multi-processing tool that is specifically designed to aid Pentesters and Bug Hunters in Web/Mobile Application testing. With its powerful capabilities, it streamlines the process of collecting and extracting information from Burp Suite files, empowering you to effectively manage API endpoints.
