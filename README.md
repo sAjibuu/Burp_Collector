@@ -12,12 +12,14 @@ Burp Collector efficiently organizes API endpoints and seamlessly exports them t
 3. Create a tailored wordlist for your target (Based on Requests/Responses/Cookies/Headers etc') - **Recommended!**
 4. Convert Postman collections to an Excel file - **Recommended!**
 5. Convert collected map files to their original Javascript source code - **Recommended!**
-6. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
-7. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
-8. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
-9. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
-10. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
-11. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
+6. Convert map files to their original Javascript source code and check if the dependencies exists in npmjs.com - **Recommended!**
+7. Collecting URIs with parameters and dumping them to a file with a FUZZ keyword - **Recommended!**
+8. Collect and extract possible APIs found in files during the test to an Excel file - It might generate a lot of junk, but it could be helpful if used right.
+9. Collect and extract all URLs encountered during the test to an Excel file - This can be slow depending on the project size.
+10. Collect and extract all possible secrets (AWS/Google/Firebase, etc') that might be disclosed - Most of the time the output will be False-Positive.
+11. Collect and extract all JSON files encountered during the test into an Excel file - Fast.
+12. Collect and extract all subdomains encountered during the test into an Excel file - Fast.
+13. Collect and extract all JS/MAP URLs encountered during the test to an Excel file - Fast.
 
 # Installation: 
 
@@ -64,6 +66,14 @@ Options:
    -m, --map 
   
       Convert collected map files to their original Javascript source code.
+      
+   -D, --dependency
+  
+      Convert map files to their original Javascript source code and check if the dependencies exists in npmjs.com.
+      
+   -P, --paramspider 
+  
+      Collecting URLs with parameters and dumping them to a file with a FUZZ keyword.
       
    -J, --js 
   
