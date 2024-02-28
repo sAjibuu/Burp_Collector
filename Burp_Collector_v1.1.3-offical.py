@@ -1307,9 +1307,6 @@ def api_collector(file):
 
             if any(content in content_type_header for content in valid_content_types) and status_code in success_codes:
 
-                print(status_code)
-                print(type(status_code))
-
                 path = i.find('path').text
                 
                 # if Content-Type is equals to JSON/XML it will be added to the xlsx file
@@ -1372,9 +1369,6 @@ def api_collector(file):
             
             if status_code in success_codes:
 
-                print(status_code)
-                print(type(status_code))
-                
                 for mime in mime_types:
                     flag = False
                     if mime in content_type_header_request:
