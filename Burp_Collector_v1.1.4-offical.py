@@ -234,13 +234,11 @@ def extract_postman_data(json_data):
         if 'item' in item:
             extract_postman_data(item)  # recursive call for folders within collection
 
-
 def extract_base_url(json_data):
     for variable in json_data.get('variable', []):
-        if variable.get('key') == 'baseUrl':
+        if variable.get('key') == 'baseUrl' or variable.get('key') == 'url':
             return variable.get('value', '')
     return ""
-
 
 def count_endpoints(json_data):
     # OpenAPI Logic
@@ -272,11 +270,14 @@ def extract_endpoints(json_data):
     global base_url
     # OpenAPI Logic
     if 'info' in json_data and ('openapi' in json_data or '2.0' in str(json_data.get('swagger', ''))):
-        base_url = extract_base_url(json_data)
+        url = ""
+        if "'servers':" in str(json_data):
+                    url = json_data['servers'][0]['url']
         for path, methods in json_data.get("paths", {}).items():
+            
             for method, details in methods.items():
                 description = details.get("description", "")
-                data_postman.append([base_url, path, method.upper(), description])
+                data_postman.append([url, path, method.upper(), description])
 
     # Postman Logic
     elif 'info' in json_data and json_data['info'].get('schema',
@@ -351,9 +352,10 @@ def postmanDirectory(json_directory, count=None):
                         sheet_all.cell(row=all_row, column=5).font = Font(name='Calibri', size=14)
 
                     adjust_column_widths(sheet)
-                    wb.save(f'Postman_API_Endpoints_Num-{counter}.xlsx')
+                    filename = filename.replace(".json", "")
+                    wb.save(f'{filename}_endpoints.xlsx')
                     print(
-                        f"{GREEN}[SUCCESS]{RESET} {ORANGE}Postman_Endpoints_Num-{counter}.xlsx{RESET} created in {BLUE}{os.getcwd()}{RESET} directory.")
+                        f"{GREEN}[SUCCESS]{RESET} {ORANGE}{filename}_endpoints.xlsx{RESET} created in {BLUE}{os.getcwd()}{RESET} directory.")
 
 
                 else:
@@ -1995,7 +1997,7 @@ def main(file, tool_method, sheet, wb, uri_finder, regex_secrets, api_extractor,
 
 
 def get_current_version():
-    return "v1.1.4-offical"
+    return "v1.1.5-offical"
 
 
 def create_delete_script(script_path, python_script_path, zip_file_name):
